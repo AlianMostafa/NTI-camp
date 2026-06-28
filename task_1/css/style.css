@@ -1,0 +1,41 @@
+body {
+  background-color: #0b1c2b;
+  color: #c9d6e0;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+
+.person1, .person2, .person3, .person4, .person5, .person6 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  background-color: #1e3a5c;
+  margin-bottom: 25px;
+  padding: 15px;
+  color: #c9d6e0;
+}
+
+.person1 p, .person2 p, .person3 p , .person4 p, .person5 p, .person6 p {
+  font-size: 22px;
+  width: 50%;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.person1 img, .person2 img, .person3 img, .person4 img, .person5 img, .person6 img {
+  width: 50%;
+  border: 5px solid #000;
+  border-radius: 20px;
+}

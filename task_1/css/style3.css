@@ -1,0 +1,39 @@
+body {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+
+}
+img{
+    width: 50%;
+    height: 100%;
+}
+.form h1{
+    margin: 5%;
+    text-align: center;
+    border-bottom: black solid 5px;
+}
+.form{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+.form input{
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+.form label{
+    text-transform: capitalize;
+    position: relative;
+    float: left;
+    margin-left: 20px;
+}
+.form .button{
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 10px;
+    width: 150px;
+    background-color: antiquewhite;
+}
