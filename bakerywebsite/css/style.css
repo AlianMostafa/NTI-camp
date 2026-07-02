@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Alegreya", serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* star header */
+header {
+    height: 110vh;
+    background: url(../img/drew-coffman-1872.jpg) center center/cover no-repeat;
+    color: white;
+
+}
+/* -----------------------------start navbar----------------------------- */
+#navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+    z-index: 1000;
+    background: transparent;
+    transition: 0.3s ease;
+}
+
+#navbar a img {
+    width: 200px;
+    margin-left: 150px;
+}
+
+#navbar nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 150px;
+}
+
+#navbar nav ul li a {
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+#navbar nav ul li a:hover {
+    color: orange;
+    border-top: 2px solid orange;
+}
+/* --------------------------------end navbar ---------------------- */
+header .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+}
+
+header .content p {
+    text-align: center;
+    font-size: 22px;
+}
+
+header .content p span {
+    font-weight: 200;
+    font-size: 80px;
+}
+
+header .content .btn .btn {
+    color: white;
+    padding: 20px;
+    border: 3px solid white;
+    border-radius: 5px;
+    font-size: 18;
+    text-transform: capitalize;
+    margin: 0 10px;
+}
+
+header .content .btn a {
+    background-color: #8E7754;
+}
+
+header .content .btn a:hover {
+    background-color: white;
+    color: black;
+}
+
+header .content .btn+a {
+    background-color: transparent;
+}
+
+header .content a:last-child {
+    width: 30px;
+    height: 50px;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    position: relative;
+    transform: translate(50%,120%);
+}
+
+header .content a.empty::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    animation: move 1s ease-in infinite  ;
+
+}
+
+@keyframes move {
+    0% {
+        top: 10%;
+        left: 25%;
+    }
+    100%{
+        top: 50%;
+        left: 25%;
+        background-color: transparent;
+    }
+}
+
+/* end header */
+/* ----------------back to top button & box at the scroll bar-------- */
+main{
+    position: relative;
+}
+main .back-to-top{
+    color: white;
+    font-size: 40px;
+    background-color: #303030;
+    position: fixed;
+    top: 90%;
+    right: 0;
+    border-radius: 50%;
+}
+
+main .box{
+    position: fixed;
+    top: 30%;
+    right: 0;
+    background-color: #F8F8F8;
+    width: 50px;
+    height: 100px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+main .box a{
+    color: gray;
+    font-size: 25px;
+}
+main .box a:hover{
+    color: cyan;
+}
+
+
+
+/* start container  */
+/* -----------------section1 (who are you) , section2 (our location)----------------------- */
+
+main {
+    background-color: #F8F8F8;
+}
+.section1 , .section2{
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    margin: 0 10%;
+}
+.section1 img , .section2 img{
+ width: 45%;
+}
+.section1 div , .section2 div{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.section1 div h3 , .section2 div h3{
+    font-weight: 400;
+    font-size: 30px;
+}
+.section1 div p , .section2 div p{
+    color: #8F7854;
+    font-size: 18px;
+
+}
+.section1 div ul{
+    list-style: none;
+    color: #8E7754;
+    font-size: 20px;
+}
+
+.section1 div ul li i{
+    color: #8F7854;
+    font-size: 22px;
+    margin: 15px;
+}
+
+
+
+.section2 div p{
+    line-height: 35px;
+    color: #686868;
+}
+/* ---------------------------section3 our Baking----------------------- */
+.section3{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 0 10%;
+}
+.section3 h2{
+    font-weight: 400;
+    font-size: 30px;
+}
+.section3 p{
+    font-weight: 400;
+    font-size: 17px;
+    color: #686868;
+}
+.section3 .baking{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.section3 .baking div img{
+    width: 350px;
+    border-radius: 5px;
+}
+.section3 .baking div img:hover{
+    filter: brightness(1.1);
+}
+.section3 .baking div h3{
+    font-weight: 400;
+    text-align: center;
+    font-size: 22px;
+    color: #303030;
+}
+.section3 .baking div p{
+    font-weight: 400;
+    text-align: center;
+    font-size: 17px;
+}
+
+/* ---------------------------contact section----------------------- */
+.contact{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4  0px;
+    margin: 0 10%;
+}
+.contact .content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+.contact .content h2{
+    font-weight: 400;
+    font-size: 30px;
+}
+.contact .content p{
+    color: #8E7754;
+    font-size: 18px;
+    line-height: 30px;
+    width: 85%;
+}
+.contact .content h4{
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #303030;
+
+}
+.contact .content ul{
+    list-style: none;
+}
+.contact .content ul li{
+    font-size: 18px;
+    color: #8E7754;
+    padding: 20px;
+}
+.contact .content ul li i{
+    font-size: 30px;
+    margin-right: 20px;
+}
+.contact iframe{
+    width: 70%;
+}
+/* -------------------------About section---------------------------- */
+.about{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 0 10%;
+    background-color: #403D38;
+    position: relative;
+}
+.about::before{
+    content: "";
+    width: 125%;
+    height: 60vh;
+    background-color: rgb(64, 61, 56 );
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.about .details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .details div{
+    height: 70vh;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap: 5px; */
+    margin-top: 40px;
+    color: #8e8c88;
+
+}
+.about .details h4{
+    font-weight: 300;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.about .details p{
+    line-height: 30px;
+}
+.about .details span{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #4e4d4a;
+    width: 90%;
+}
+.about .details span i{
+    font-size: 10px;
+}
+
+/* -------------------------footer section---------------------------- */
+
+footer{
+    background-color: #353330;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #686868;
+    gap: 30px;
+}
+footer p{
+    font-size: 18px;
+}
+footer .icons{
+    font-size: 25px;
+}
+footer .icons a{
+    color: #8e8c88;
+}
+footer div a i{
+    padding: 0 20px;
+
+}
+footer div a .fa-facebook:hover,
+footer div a .fa-square-x-twitter:hover ,
+footer div a .fa-square-linkedin:hover{
+    color: rgb(35, 79, 211);
+}
+footer div a .fa-google-plus-g:hover{
+    color: red;
+}
+
+/* end container  */
